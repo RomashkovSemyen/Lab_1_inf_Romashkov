@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 
 # Считываем и рисуем все 6 CSV файлов на одном графике
 files = [
-    'comb.csv', 'quick.csv', 'heap.csv',  # пункт 2
-    'bubble.csv', 'insertion.csv', 'selecion.csv'  # пункт 0
+    'comb.csv', 'quick.csv', 'heap.csv',
+    'bubble.csv', 'insertion.csv', 'selection.csv'
 ]
 
 labels = [
@@ -38,9 +38,9 @@ for i, file in enumerate(files):
 
 plt.xlabel('N')
 plt.ylabel('Time')
-plt.title('Small Massive all Sorts: Point 0 vs Point 2')
+plt.title('All Algorithms: Point 0 vs Point 2')
 plt.legend()
 plt.grid(True, alpha=0.3)
 
-plt.savefig('small_massive.png', dpi=300, bbox_inches='tight')
+plt.savefig('all_algorithms.png', dpi=300, bbox_inches='tight')
 plt.show()
